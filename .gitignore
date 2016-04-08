@@ -1,0 +1,14 @@
+*~
+*#
+*.pyc
+*.DS_Store
+*.csv
+*.twb
+*.tde
+*.xlsx
+*.jpg
+*.png
+*.ipynb_checkpoints
+*.settings
+*.htaccess
+*.txt
