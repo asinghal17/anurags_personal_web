@@ -50,19 +50,19 @@
                 <a href="/index.html">ANURAG SINGHAL</a>
             </li>
             <li>
-                <a href="/">Home</a>
+                <a href="{{ url_for('index') }}">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="{{ url_for('index') }}#about">About</a>
             </li>
             <li>
-                <a href="#work">My Work</a>
+                <a href="{{ url_for('index') }}#work">My Work</a>
             </li>
             <li>
                 <a href="{{ url_for('blog') }}">My Blog</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="{{ url_for('index') }}#contact">Contact</a>
             </li>
 
         </ul>
