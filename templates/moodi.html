@@ -1,0 +1,56 @@
+{% extends "skeleton.html" %}
+    
+    {% block header %}
+    <!-- Callout -->
+    <aside class="callout">
+
+        <div class="text-vertical-center">
+            <!-- <img src="img/anurag_white.png" alt="Anurag LOGO" height="300" width="300"> -->
+            <h1>My Work</h1>
+            <h4>MOODI: DRESS YOUR STYLE</h4>
+
+        </div>
+    </aside>
+    {% endblock %}
+
+    {% block section %}
+    <!-- Portfolio -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Landing Page Design and Implementation</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                <H3> MOODI: Dress Your Style</H3>
+                                <h5> <strong>TEAM: Anurag Singhal, Mutahhar Sajjad, Sahil Doshi</strong> </h5>
+                                <br>
+                                <p align="left"> <Strong>MOODI </strong>is a clothing rental subscription service that allows you to check out trendy, upscale clothes every month. 
+                                    We've all experienced the moment when we realize there's nothing exciting left in the closet or that we've been wearing the same item over and over again. Moodi helps to ease that pain by allowing you to check out items monthly, and keep your closet looking fresh.
+                                </p>
+                                <br>
+                                <p align="left"> Worked with team to Design, Develop, and Implement a Creative Landing Page.</br>
+
+                                    <!-- <img class="img-portfolio img-responsive" src="img/moodi_screenshot.png"> -->
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="http://www.moodi.io">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/moodi_screenshot.png') }}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    {% endblock %} 
