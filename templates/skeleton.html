@@ -2,24 +2,23 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hi there! My name is Anurag Singhal and this is my personal Website. I have made this website to present my previous projects and aggregate all my social networks. If you would like to connect, send me an email.">
-    <link rel="shortcut icon" href="img/Anurag_Logo.ico"/>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Anurag_Logo.ico') }}"/>
     <meta name="author" content="Anurag Singhal">
 
     <title>Anurag Singhal: Personal Website</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,11 +38,9 @@
       ga('send', 'pageview');
 
     </script>
-
 </head>
 
 <body>
-
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -53,16 +50,16 @@
                 <a href="/index.html">ANURAG SINGHAL</a>
             </li>
             <li>
-                <a href="http://www.anurags.org">Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
-                <a href="http://www.anurags.org/index.html#about">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="http://www.anurags.org/index.html#work">My Work</a>
+                <a href="#work">My Work</a>
             </li>
             <li>
-                <a href="http://www.anurags.org/blog.html">My Blog</a>
+                <a href="{{ url_for('blog') }}">My Blog</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -71,37 +68,14 @@
         </ul>
     </nav>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <!-- <img src="img/anurag_white.png" alt="Anurag LOGO" height="300" width="300"> -->
-            <h1>My Blog</h1>
-            <h4>Anurag Singhal</h4>
-        </div>
-    </aside>
+    <!-- Header -->
+    {% block header %}
+    {% endblock %}
 
 
-    <!-- Portfolio -->
-    <section class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="portfolio-item">
-                                <script async src="https://static.medium.com/embed.js"></script>
-                                <a class="m-profile" data-width="100%" href="https://medium.com/@asinghal17">Anurag Singhal</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </section>
-
-  
-
+    <!-- Section -->
+    {% block section %}
+    {% endblock %}
 
 
     <!-- Footer -->
@@ -136,10 +110,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -172,7 +146,6 @@
         });
     });
     </script>
-
 </body>
 
 </html>
