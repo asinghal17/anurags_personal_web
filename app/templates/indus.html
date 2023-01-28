@@ -1,0 +1,98 @@
+{% extends "skeleton.html" %}
+    
+    {% block header %}
+    <!-- Callout -->
+    <aside class="callout">
+
+        <div class="text-vertical-center">
+            <!-- <img src="img/anurag_white.png" alt="Anurag LOGO" height="300" width="300"> -->
+            <h1>My Work</h1>
+            <h4>INDUS SOUTH ASIAN ALLIANCE</h4>
+
+        </div>
+    </aside>
+    {% endblock %}
+
+    {% block section %}
+    <!-- Portfolio -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Flyer Designs</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/anahatflyer.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/csafterparty.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/csflyer.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row (nested) -->
+                    
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>T-Shirt/Apparel Designs</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/tshirtcs.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/anahattshirt.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/bbt1.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <!-- <a href="#"> -->
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/bbt2.png') }}">
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+
+
+    </div>
+        <!-- /.container -->
+    </section>
+    {% endblock %}
